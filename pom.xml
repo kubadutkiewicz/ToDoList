@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>jakdut</groupId>
-	<artifactId>HelloWorld</artifactId>
+	<artifactId>ToDoListApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Hello World with Spring</name>
+	<name>To Do List Application</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
