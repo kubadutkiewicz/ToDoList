@@ -23,4 +23,5 @@ class HelloServlet extends HttpServlet {
         logger.info("Got request");
         return service.prepareGreeting(name, langId);
     }
+
 }
