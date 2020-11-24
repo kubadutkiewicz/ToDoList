@@ -1,4 +1,4 @@
-package jakdut.lang;
+package jakdut.language;
 
 class LangDTO {
     private Integer id;

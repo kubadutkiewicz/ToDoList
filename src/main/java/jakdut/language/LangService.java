@@ -1,4 +1,4 @@
-package jakdut.lang;
+package jakdut.language;
 
 import org.springframework.stereotype.Service;
 

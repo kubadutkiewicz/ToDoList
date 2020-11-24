@@ -1,7 +1,7 @@
 package jakdut.hello;
 
-import jakdut.lang.Lang;
-import jakdut.lang.LangRepository;
+import jakdut.language.Lang;
+import jakdut.language.LangRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
