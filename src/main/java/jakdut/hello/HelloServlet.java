@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServlet;
 
 @RestController
-class HelloServlet extends HttpServlet{
+class HelloServlet extends HttpServlet {
     private final Logger logger = LoggerFactory.getLogger(HelloServlet.class);
 
     private HelloService service;
 
-    HelloServlet(HelloService service){
+    HelloServlet(HelloService service) {
         this.service = service;
     }
 
