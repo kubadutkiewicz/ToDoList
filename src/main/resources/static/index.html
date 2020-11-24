@@ -67,8 +67,20 @@
         });
       label.appendChild(checkbox);
       label.appendChild(document.createTextNode(` ${todo.text}`));
-      document.getElementById('allTodos').appendChild(label);
-    }
+      const deleteButton = document.createElement('span');
+  deleteButton.innerText = 'x';
+  deleteButton.style.cursor = 'pointer';
+  deleteButton.style.marginLeft = '2em';
+  deleteButton.onclick = (event) => {
+    event.preventDefault();
+    fetch(`${TODO_API_URL}/${todo.id}`, { method: 'DELETE' })
+      .then(processOkResponse)
+      .then(() => label.remove())
+      .catch(console.warn);
+  }
+  label.appendChild(deleteButton);
+  document.getElementById('allTodos').appendChild(label);
+}
 
     initWelcomeForm();
 
@@ -119,6 +131,7 @@
       throw new Error(`Status not 200 (${response.status})`);
     }
   })();
+
 </script>
 </body>
 </html>
